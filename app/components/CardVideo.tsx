@@ -18,17 +18,17 @@ interface PropCardVideo {
 }
 
 export default function CardVideo({ dataVideos }: PropCardVideo) {
-  const [isEnteVideo, setIsEnteVideo] = useState(false);
+  const [hoveredId, setHoveredId] = useState("");
   return (
     <div>
       {dataVideos.map((data, index) => (
-        <section
-          key={index}
-          className="flex items-center justify-center"
-          onMouseEnter={() => setIsEnteVideo(true)}
-          onMouseLeave={() => setIsEnteVideo(false)}
-        >
-          <Link href={"#"} aria-label="Go to video">
+        <section key={index} className="flex items-center justify-center">
+          <Link
+            href={"#"}
+            aria-label="Go to video"
+            onMouseEnter={() => setHoveredId(data.id)}
+            onMouseLeave={() => setHoveredId("")}
+          >
             <div className="rounded-tl-2xl rounded-tr-2xl" id="cardVideo">
               <div className="max-w-130 min-w-50 w-[98%] mx-auto aspect-[7/4] file: rounded-2xl group overflow-hidden relative">
                 {/* Imagem do video */}
@@ -42,13 +42,13 @@ export default function CardVideo({ dataVideos }: PropCardVideo) {
                 {/* Icone de PLAY */}
                 <div
                   className={`bg-black/50 backdrop-blur w-15 h-15 absolute transform top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full flex items-center justify-center opacity-0 ${
-                    isEnteVideo ? "opacity-100" : "opacity-0"
+                    hoveredId === data.id ? "opacity-100" : "opacity-0"
                   } transition-opacity duration-300`}
                 >
                   <CiPlay1 className="text-2xl text-white" />
                 </div>
                 {/* Duração do Vídeo */}
-                <div className="absolute right-2 bottom-2 p-2 bg-black text-white rounded-sm">
+                <div className="absolute right-2 bottom-2 p-2 bg-black/50 backdrop-blur text-white rounded-sm">
                   <span className="text-sm">{data.duration}</span>
                 </div>
               </div>
@@ -63,10 +63,10 @@ export default function CardVideo({ dataVideos }: PropCardVideo) {
                     height={1000}
                   />
                 </div>
-                <div className="text-black flex flex-col">
+                <div className="text-white flex flex-col">
                   <h2 className="max-w-110 line-clamp-2">{data.title}</h2>
                   <div className="-space-y-1">
-                    <p className="text-gray-900">{data.views}</p>
+                    <p className="text-gray-400">{data.views}</p>
                     <p className="text-gray-500 text-sm">{data.timesTamp}</p>
                   </div>
                 </div>

@@ -15,12 +15,63 @@ const videos = [
   },
 ];
 
+const shorts = [
+  {
+    id: "1",
+    url: "#",
+    src: "/img/modelo-01.jpg",
+    title:
+      "Existe também o utilitário line-clamp no Tailwind, que serve para limitar o número de linhas de texto exibidas.",
+    channel: "@chatgpt",
+    timePublic: "2:25",
+    views: "2.4",
+    likes: "186",
+    comment: "3.2",
+  },
+  {
+    id: "2",
+    url: "#",
+    src: "/img/modelo-02.jpg",
+    title:
+      "Existe também o utilitário line-clamp no Tailwind, que serve para limitar o número de linhas de texto exibidas.",
+    channel: "@chatgpt",
+    timePublic: "2:25",
+    views: "2.4",
+    likes: "186",
+    comment: "3.2",
+  },
+  {
+    id: "3",
+    url: "#",
+    src: "/img/modelo-04.jpg",
+    title:
+      "Existe também o utilitário line-clamp no Tailwind, que serve para limitar o número de linhas de texto exibidas.",
+    channel: "@chatgpt",
+    timePublic: "2:25",
+    views: "2.4",
+    likes: "186",
+    comment: "3.2",
+  },
+  {
+    id: "4",
+    url: "#",
+    src: "/img/modelo-05.jpg",
+    title:
+      "Existe também o utilitário line-clamp no Tailwind, que serve para limitar o número de linhas de texto exibidas.",
+    channel: "@chatgpt",
+    timePublic: "2:25",
+    views: "2.4",
+    likes: "186",
+    comment: "3.2",
+  },
+];
+
 export default function Laboratorio() {
   return (
-    <div className="bg-white w-dvw h-dvh">
+    <div className="w-dvw h-dvh">
       <div>
         <div className="pt-20">
-          {/* <CardShort /> */}
+          <CardShort dataShorts={shorts} />
           <CardVideo dataVideos={videos} />
         </div>
       </div>

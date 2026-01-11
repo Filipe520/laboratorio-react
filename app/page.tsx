@@ -6,11 +6,12 @@ import CardVideo from "./components/CardVideo";
 const videos = [
   {
     id: "123",
+    link: "#",
     src: "https://images.unsplash.com/photo-1767738912566-9071adbe014b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "My $10,000 Gaming Setup Tour 2026 | RGB Everything!",
-    duration: "18:24",
-    views: "856K views.",
-    timesTamp: "3 days ago",
+    duration: 8.24,
+    views: 856,
+    timesTamp: new Date(),
     channel: "TeckLixo",
   },
 ];
@@ -72,7 +73,20 @@ export default function Laboratorio() {
       <div>
         <div className="pt-20">
           <CardShort dataShorts={shorts} />
-          <CardVideo dataVideos={videos} />
+          {videos.map((dataVideos) => (
+            <CardVideo
+              duration={dataVideos.duration}
+              id={dataVideos.id}
+              title={dataVideos.title}
+              link={dataVideos.link}
+              image={dataVideos.src}
+              profileImage={dataVideos.src}
+              views={dataVideos.views}
+              profileName={dataVideos.channel}
+              date={dataVideos.timesTamp}
+              key={dataVideos.id}
+            />
+          ))}
         </div>
       </div>
     </div>

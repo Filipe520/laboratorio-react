@@ -30,6 +30,7 @@ import {
   IconArrowUp,
   IconHome,
   IconMenuKebab,
+  IconRegComment,
 } from "./components/VivaIcons";
 
 const videos = [
@@ -121,6 +122,10 @@ export default function Laboratorio() {
   const styleIcone = "text-rose-400 size-10";
 
   const arrayIcones = [
+    {
+      nameIcon: "IconRegComment",
+      icon: <IconRegComment className={styleIcone} />,
+    },
     {
       nameIcon: "IconHome",
       icon: <IconHome className={styleIcone} />,
@@ -228,7 +233,7 @@ export default function Laboratorio() {
           Abrir modal Icones
         </button>
         {isOpen && (
-          <div className="w-200 h-150 overflow-auto bg-gray-500/20 mx-auto rounded-lg ">
+          <div className="w-200 h-180 overflow-auto bg-gray-500/20 mx-auto rounded-lg ">
             <ul className="flex  gap-10 flex-wrap p-20 items-center justify-center">
               {arrayIcones.map((icon, index) => (
                 <li

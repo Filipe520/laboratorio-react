@@ -3,13 +3,62 @@
 import CardShort from "./components/CardShort";
 import CardVideo from "./components/CardVideo";
 
+import { useState } from "react";
+
+import {
+  IconCam,
+  IconFire,
+  IconTime,
+  IconList,
+  IconLike,
+  IconHeart,
+  IconFireLight,
+  IconVideoLight,
+  IconPhoto,
+  IconFileWaveform,
+  IconShoppingCart,
+  IconArrowForwardIos,
+  IconGoSignOut,
+  IconPlay,
+  IconEye,
+  IconSearch,
+  IconTrash,
+  IconArrowUturnLeft,
+  IconArrowBack,
+  IconArrowForward,
+  IconArrowDown,
+  IconArrowUp,
+  IconHome,
+  IconMenuKebab,
+} from "./components/VivaIcons";
+
 const videos = [
   {
     id: "123",
     link: "#",
     src: "https://images.unsplash.com/photo-1767738912566-9071adbe014b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "My $10,000 Gaming Setup Tour 2026 | RGB Everything!",
-    duration: 8.24,
+    duration: 298,
+    views: 856,
+    timesTamp: new Date(),
+    channel: "TeckLixo",
+  },
+  {
+    id: "2",
+    link: "#",
+    src: "https://images.unsplash.com/photo-1767738912566-9071adbe014b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "My $10,000 Gaming Setup Tour 2026 | RGB Everything!",
+    duration: 565,
+    views: 856,
+    timesTamp: new Date(),
+    channel: "TeckLixo",
+  },
+  {
+    id: "3",
+    link: "#",
+    src: "https://images.unsplash.com/photo-1767738912566-9071adbe014b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "My $10,000 Gaming Setup Tour 2026 | RGB Everything!",
+    duration: 1563,
     views: 856,
     timesTamp: new Date(),
     channel: "TeckLixo",
@@ -25,7 +74,7 @@ const shorts = [
       "Existe também o utilitário line-clamp no Tailwind, que serve para limitar o número de linhas de texto exibidas.",
     channel: "@chatgpt",
     timePublic: "2:25",
-    views: "2.4",
+    views: 2.4,
     likes: "186",
     comment: "3.2",
   },
@@ -37,7 +86,7 @@ const shorts = [
       "Existe também o utilitário line-clamp no Tailwind, que serve para limitar o número de linhas de texto exibidas.",
     channel: "@chatgpt",
     timePublic: "2:25",
-    views: "2.4",
+    views: 2.4,
     likes: "186",
     comment: "3.2",
   },
@@ -49,7 +98,7 @@ const shorts = [
       "Existe também o utilitário line-clamp no Tailwind, que serve para limitar o número de linhas de texto exibidas.",
     channel: "@chatgpt",
     timePublic: "2:25",
-    views: "2.4",
+    views: 2.4,
     likes: "186",
     comment: "3.2",
   },
@@ -61,18 +110,157 @@ const shorts = [
       "Existe também o utilitário line-clamp no Tailwind, que serve para limitar o número de linhas de texto exibidas.",
     channel: "@chatgpt",
     timePublic: "2:25",
-    views: "2.4",
+    views: 2.4,
     likes: "186",
     comment: "3.2",
   },
 ];
 
 export default function Laboratorio() {
+  const [isOpen, setIsOpen] = useState(false);
+  const styleIcone = "text-rose-400 size-10";
+
+  const arrayIcones = [
+    {
+      nameIcon: "IconHome",
+      icon: <IconHome className={styleIcone} />,
+    },
+    {
+      nameIcon: "IconMenuKebab",
+      icon: <IconMenuKebab className={styleIcone} />,
+    },
+    {
+      nameIcon: "IconCam",
+      icon: <IconCam className={styleIcone} />,
+    },
+    {
+      nameIcon: "IconFire",
+      icon: <IconFire className={styleIcone} />,
+    },
+    {
+      nameIcon: "IconTime",
+      icon: <IconTime className={styleIcone} />,
+    },
+    {
+      nameIcon: "IconList",
+      icon: <IconList className={styleIcone} />,
+    },
+    {
+      nameIcon: "IconLike",
+      icon: <IconLike className={styleIcone} />,
+    },
+    {
+      nameIcon: "IconHeart",
+      icon: <IconHeart className={styleIcone} />,
+    },
+    {
+      nameIcon: "IconFireLight",
+      icon: <IconFireLight className={styleIcone} />,
+    },
+    {
+      nameIcon: "IconVideoLight",
+      icon: <IconVideoLight className={styleIcone} />,
+    },
+    {
+      nameIcon: "IconPhoto",
+      icon: <IconPhoto className={styleIcone} />,
+    },
+    {
+      nameIcon: "IconFileWaveform",
+      icon: <IconFileWaveform className={styleIcone} />,
+    },
+    {
+      nameIcon: "IconShoppingCart",
+      icon: <IconShoppingCart className={styleIcone} />,
+    },
+    {
+      nameIcon: "IconArrowForwardIos",
+      icon: <IconArrowForwardIos className={styleIcone} />,
+    },
+    {
+      nameIcon: "IconGoSignOut",
+      icon: <IconGoSignOut className={styleIcone} />,
+    },
+    {
+      nameIcon: "IconPlay",
+      icon: <IconPlay className={styleIcone} />,
+    },
+    {
+      nameIcon: "IconEye",
+      icon: <IconEye className={styleIcone} />,
+    },
+    {
+      nameIcon: "IconSearch",
+      icon: <IconSearch className={styleIcone} />,
+    },
+    {
+      nameIcon: "IconTrash",
+      icon: <IconTrash className={styleIcone} />,
+    },
+    {
+      nameIcon: "IconArrowUturnLeft",
+      icon: <IconArrowUturnLeft className={styleIcone} />,
+    },
+    {
+      nameIcon: "IconArrowBack",
+      icon: <IconArrowBack className={styleIcone} />,
+    },
+    {
+      nameIcon: "IconArrowForward",
+      icon: <IconArrowForward className={styleIcone} />,
+    },
+    {
+      nameIcon: "IconArrowDown",
+      icon: <IconArrowDown className={styleIcone} />,
+    },
+    {
+      nameIcon: "IconArrowUp",
+      icon: <IconArrowUp className={styleIcone} />,
+    },
+  ];
   return (
     <div className="w-dvw h-dvh">
+      <div className="w-full h-200 flex flex-col items-center justify-center mt-10 gap-5">
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="bg-gray-800 p-5 rounded-2xl active:opacity-65 mx-auto"
+        >
+          Abrir modal Icones
+        </button>
+        {isOpen && (
+          <div className="w-200 h-150 overflow-auto bg-gray-500/20 mx-auto rounded-lg ">
+            <ul className="flex  gap-10 flex-wrap p-20 items-center justify-center">
+              {arrayIcones.map((icon, index) => (
+                <li
+                  key={index}
+                  className="flex flex-col items-center justify-center gap-2"
+                >
+                  {icon.icon}
+                  {icon.nameIcon}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+
       <div>
         <div className="pt-20">
-          <CardShort dataShorts={shorts} />
+          {shorts.map((dataShorts) => (
+            <CardShort
+              key={dataShorts.id}
+              image={dataShorts.src}
+              link={dataShorts.url}
+              title={dataShorts.title}
+              views={dataShorts.views}
+              id={dataShorts.id}
+              duration={dataShorts.timePublic}
+              date={new Date()}
+              profileName={dataShorts.channel}
+              profileImage={dataShorts.src}
+              onlyShortOnPage
+            />
+          ))}
           {videos.map((dataVideos) => (
             <CardVideo
               duration={dataVideos.duration}

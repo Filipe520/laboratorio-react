@@ -5,33 +5,82 @@ import CardVideo from "./components/CardVideo";
 
 import { useState } from "react";
 
-import {
-  IconCam,
-  IconFire,
-  IconTime,
-  IconList,
-  IconLike,
-  IconHeart,
-  IconFireLight,
-  IconVideoLight,
-  IconPhoto,
-  IconFileWaveform,
-  IconShoppingCart,
-  IconArrowForwardIos,
-  IconGoSignOut,
-  IconPlay,
-  IconEye,
-  IconSearch,
-  IconTrash,
-  IconArrowUturnLeft,
-  IconArrowBack,
-  IconArrowForward,
-  IconArrowDown,
-  IconArrowUp,
-  IconHome,
-  IconMenuKebab,
-  IconRegComment,
-} from "./components/VivaIcons";
+import * as VivaIcons from "./components/VivaIcons";
+
+const icones = [
+  "Cam",
+  "Fire",
+  "Time",
+  "List",
+  "Like",
+  "Heart",
+  "FireLight",
+  "VideoLight",
+  "Photo",
+  "FileWaveform",
+  "ShoppingCart",
+  "ArrowForwardIos",
+  "GoSignOut",
+  "Play",
+  "Eye",
+  "Search",
+  "Trash",
+  "ArrowUturnLeft",
+  "ArrowBack",
+  "ArrowForward",
+  "ArrowDown",
+  "ArrowUp",
+  "Home",
+  "MenuKebab",
+  "RegComment",
+  "ArrowDownLight",
+  "ArrowLeftLight",
+  "ArrowRight",
+  "ArrowRightLight",
+  "ArrowUpBold",
+  "Circle_Info",
+  "CloseOutline",
+  "EyeClosePassword",
+  "EyeOpenPassword",
+  "LockPassword",
+  "OutLineDotsVerticalBold",
+  "ThumbsUp",
+  "AlignLeft",
+  "BatterySaverFill",
+  "BatterySaverLine",
+  "BellOn",
+  "BsEmojiTearFill",
+  "CameraLight",
+  "ClicleAlert",
+  "DeleteOutline",
+  "Dislike",
+  "Edit",
+  "EmojiHeartEyes",
+  "EmojiTear",
+  "EmojiWink",
+  "ExternalLinkAltSolid",
+  "HardDriveDownload",
+  "IconKey",
+  "Menu",
+  "OutlineArrowDropDown",
+  "OutlineArrowDropUp",
+  "OutlineFullscreen",
+  "OutlineFullscreenExit",
+  "OutlineMail",
+  "ProfileUser",
+  "RegCirclePause",
+  "RegCirclePlay",
+  "RegEdit",
+  "ReloadCircleOutline",
+  "RewindBackward10",
+  "RewindForward10",
+  "Share",
+  "SolidDislike",
+  "ThumbsUpBold",
+  "VideoCamBold",
+  "VolumeMute",
+  "VolumeUp",
+];
 
 const videos = [
   {
@@ -121,108 +170,10 @@ export default function Laboratorio() {
   const [isOpen, setIsOpen] = useState(false);
   const styleIcone = "text-rose-400 size-10";
 
-  const arrayIcones = [
-    {
-      nameIcon: "IconRegComment",
-      icon: <IconRegComment className={styleIcone} />,
-    },
-    {
-      nameIcon: "IconHome",
-      icon: <IconHome className={styleIcone} />,
-    },
-    {
-      nameIcon: "IconMenuKebab",
-      icon: <IconMenuKebab className={styleIcone} />,
-    },
-    {
-      nameIcon: "IconCam",
-      icon: <IconCam className={styleIcone} />,
-    },
-    {
-      nameIcon: "IconFire",
-      icon: <IconFire className={styleIcone} />,
-    },
-    {
-      nameIcon: "IconTime",
-      icon: <IconTime className={styleIcone} />,
-    },
-    {
-      nameIcon: "IconList",
-      icon: <IconList className={styleIcone} />,
-    },
-    {
-      nameIcon: "IconLike",
-      icon: <IconLike className={styleIcone} />,
-    },
-    {
-      nameIcon: "IconHeart",
-      icon: <IconHeart className={styleIcone} />,
-    },
-    {
-      nameIcon: "IconFireLight",
-      icon: <IconFireLight className={styleIcone} />,
-    },
-    {
-      nameIcon: "IconVideoLight",
-      icon: <IconVideoLight className={styleIcone} />,
-    },
-    {
-      nameIcon: "IconPhoto",
-      icon: <IconPhoto className={styleIcone} />,
-    },
-    {
-      nameIcon: "IconFileWaveform",
-      icon: <IconFileWaveform className={styleIcone} />,
-    },
-    {
-      nameIcon: "IconShoppingCart",
-      icon: <IconShoppingCart className={styleIcone} />,
-    },
-    {
-      nameIcon: "IconArrowForwardIos",
-      icon: <IconArrowForwardIos className={styleIcone} />,
-    },
-    {
-      nameIcon: "IconGoSignOut",
-      icon: <IconGoSignOut className={styleIcone} />,
-    },
-    {
-      nameIcon: "IconPlay",
-      icon: <IconPlay className={styleIcone} />,
-    },
-    {
-      nameIcon: "IconEye",
-      icon: <IconEye className={styleIcone} />,
-    },
-    {
-      nameIcon: "IconSearch",
-      icon: <IconSearch className={styleIcone} />,
-    },
-    {
-      nameIcon: "IconTrash",
-      icon: <IconTrash className={styleIcone} />,
-    },
-    {
-      nameIcon: "IconArrowUturnLeft",
-      icon: <IconArrowUturnLeft className={styleIcone} />,
-    },
-    {
-      nameIcon: "IconArrowBack",
-      icon: <IconArrowBack className={styleIcone} />,
-    },
-    {
-      nameIcon: "IconArrowForward",
-      icon: <IconArrowForward className={styleIcone} />,
-    },
-    {
-      nameIcon: "IconArrowDown",
-      icon: <IconArrowDown className={styleIcone} />,
-    },
-    {
-      nameIcon: "IconArrowUp",
-      icon: <IconArrowUp className={styleIcone} />,
-    },
-  ];
+  const listaDeIcones = icones.map((icone) => {
+    const IconeComp = (VivaIcons as Record<string, React.ElementType>)[icone];
+    return { nameIcon: icone, icon: <IconeComp className={styleIcone} /> };
+  });
   return (
     <div className="w-dvw h-dvh">
       <div className="w-full h-200 flex flex-col items-center justify-center mt-10 gap-5">
@@ -233,9 +184,12 @@ export default function Laboratorio() {
           Abrir modal Icones
         </button>
         {isOpen && (
-          <div className="w-200 h-180 overflow-auto bg-gray-500/20 mx-auto rounded-lg ">
-            <ul className="flex  gap-10 flex-wrap p-20 items-center justify-center">
-              {arrayIcones.map((icon, index) => (
+          <div className="w-[90dvw] h-[95dvh] overflow-auto bg-gray-500/20 mx-auto rounded-lg ">
+            <ol
+              className="grid grid-cols-5 gap-10 flex-wrap p-20 items-center justify-center"
+              type="i"
+            >
+              {listaDeIcones.map((icon, index) => (
                 <li
                   key={index}
                   className="flex flex-col items-center justify-center gap-2"
@@ -244,7 +198,7 @@ export default function Laboratorio() {
                   {icon.nameIcon}
                 </li>
               ))}
-            </ul>
+            </ol>
           </div>
         )}
       </div>

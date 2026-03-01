@@ -1,3 +1,253 @@
+export function HeartBold(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      stroke="currentColor"
+      fill="currentColor"
+      strokeWidth="0"
+      viewBox="0 0 512 512"
+      height="200px"
+      width="200px"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
+    </svg>
+  );
+}
+
+export function BiComment(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      stroke="currentColor"
+      fill="currentColor"
+      strokeWidth="0"
+      viewBox="0 0 24 24"
+      height="200px"
+      width="200px"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path d="M20 2H4c-1.103 0-2 .897-2 2v18l5.333-4H20c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zm0 14H6.667L4 18V4h16v12z"></path>
+    </svg>
+  );
+}
+
+export function RigidPlay(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      stroke="currentColor"
+      fill="currentColor"
+      strokeWidth="0"
+      viewBox="0 0 24 24"
+      height="200px"
+      width="200px"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <polygon
+        fill="currentColor"
+        strokeWidth="2"
+        points="3 22 21 12 3 2"
+      ></polygon>
+    </svg>
+  );
+}
+
+export function ArrowRepeat(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      stroke="currentColor"
+      fill="currentColor"
+      strokeWidth="0"
+      viewBox="0 0 16 16"
+      height="200px"
+      width="200px"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path d="M11 5.466V4H5a4 4 0 0 0-3.584 5.777.5.5 0 1 1-.896.446A5 5 0 0 1 5 3h6V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192m3.81.086a.5.5 0 0 1 .67.225A5 5 0 0 1 11 13H5v1.466a.25.25 0 0 1-.41.192l-2.36-1.966a.25.25 0 0 1 0-.384l2.36-1.966a.25.25 0 0 1 .41.192V12h6a4 4 0 0 0 3.585-5.777.5.5 0 0 1 .225-.67Z"></path>
+    </svg>
+  );
+}
+
+export function ArrowLeftLi(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      stroke="currentColor"
+      fill="currentColor"
+      strokeWidth="0"
+      viewBox="0 0 1024 1024"
+      height="200px"
+      width="200px"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path d="M872 474H286.9l350.2-304c5.6-4.9 2.2-14-5.2-14h-88.5c-3.9 0-7.6 1.4-10.5 3.9L155 487.8a31.96 31.96 0 0 0 0 48.3L535.1 866c1.5 1.3 3.3 2 5.2 2h91.5c7.4 0 10.8-9.2 5.2-14L286.9 550H872c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"></path>
+    </svg>
+  );
+}
+export function ArrowRightLi(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      stroke="currentColor"
+      fill="currentColor"
+      strokeWidth="0"
+      viewBox="0 0 1024 1024"
+      height="200px"
+      width="200px"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path d="M869 487.8L491.2 159.9c-2.9-2.5-6.6-3.9-10.5-3.9h-88.5c-7.4 0-10.8 9.2-5.2 14l350.2 304H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h585.1L386.9 854c-5.6 4.9-2.2 14 5.2 14h91.5c1.9 0 3.8-.7 5.2-2L869 536.2a32.07 32.07 0 0 0 0-48.4z"></path>
+    </svg>
+  );
+}
+export function ShareFill(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      stroke="currentColor"
+      fill="currentColor"
+      strokeWidth="0"
+      viewBox="0 0 16 16"
+      height="200px"
+      width="200px"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5m-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3"></path>
+    </svg>
+  );
+}
+
+export function Volume1(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      stroke="currentColor"
+      fill="currentColor"
+      strokeWidth="0"
+      viewBox="0 0 1024 1024"
+      height="200px"
+      width="200px"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path d="M654.768 65.904c-10.432-5.552-23.088-4.928-32.912 1.696L300.768 319.712l-106.624.08c-54.512 0-98.88 38.657-98.88 86.4l1.712 211.137c0 47.536 44.352 86.224 98.863 86.224l106.592.065L621.823 956.37a31.977 31.977 0 0 0 17.905 5.472c5.152 0 10.32-1.249 15.008-3.745a31.951 31.951 0 0 0 17.008-28.256V94.16a32.088 32.088 0 0 0-16.976-28.257zm-47.04 803.728L330.129 645.106a31.97 31.97 0 0 0-17.889-5.473l-116.384-.064c-20.544 0-34.88-11.712-34.88-22.464l-1.712-211.152c0-10.48 14.336-22.16 34.896-22.16l116.4-.08a32.017 32.017 0 0 0 17.855-5.457l279.312-224v715.376zm182.097-521.998c-17.712-2.928-33.937 8.864-36.849 26.305-2.912 17.424 8.88 33.92 26.289 36.832 50.32 8.4 85.472 52.304 85.472 106.753 0 51.84-36.368 96.687-86.496 106.688-17.344 3.44-28.592 20.288-25.12 37.632 3.024 15.215 16.368 25.744 31.344 25.744 2.064 0 4.192-.193 6.288-.624 79.968-15.905 138-87.185 138-169.44-.016-85.025-58.447-156.465-138.928-169.89z"></path>
+    </svg>
+  );
+}
+
+export function Volume2(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      stroke="currentColor"
+      fill="currentColor"
+      strokeWidth="0"
+      viewBox="0 0 1024 1024"
+      height="200px"
+      width="200px"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path d="M574.496 65.904c-10.432-5.552-23.087-4.928-32.911 1.696L220.497 319.712l-106.624.08c-54.512 0-98.88 38.657-98.88 86.4l1.712 211.137c0 47.536 44.352 86.224 98.863 86.224l106.592.065L541.552 956.37a31.977 31.977 0 0 0 17.905 5.472c5.152 0 10.32-1.249 15.008-3.745a31.951 31.951 0 0 0 17.008-28.256V94.16a32.026 32.026 0 0 0-16.977-28.257zm-47.023 803.728L249.874 645.106a31.97 31.97 0 0 0-17.889-5.473l-116.384-.064c-20.544 0-34.88-11.712-34.88-22.464L79.01 405.953c0-10.48 14.336-22.16 34.896-22.16l116.4-.08a32.017 32.017 0 0 0 17.855-5.457l279.312-224v715.376zm320.993-352.126c0-85.008-58.433-156.433-138.913-169.873-17.712-2.928-33.935 8.864-36.848 26.305-2.912 17.424 8.88 33.92 26.288 36.832 50.32 8.4 85.473 52.304 85.473 106.753 0 51.84-36.368 96.687-86.496 106.688-17.344 3.44-28.592 20.288-25.12 37.631 3.024 15.216 16.368 25.745 31.344 25.745 2.064 0 4.192-.193 6.288-.624 79.952-15.936 137.984-87.216 137.984-169.456zm-42.465-293.601c-16.528-6.16-35.01 2.241-41.153 18.8-6.193 16.56 2.223 34.992 18.783 41.168 96.528 36.015 161.376 129.903 161.376 233.63 0 103.777-64.848 197.842-161.312 234.002-16.56 6.223-24.944 24.655-18.751 41.183 4.816 12.88 17.009 20.785 29.969 20.785a31.97 31.97 0 0 0 11.215-2.033c121.344-45.504 202.88-163.632 202.88-293.936s-81.6-248.288-203.007-293.599z"></path>
+    </svg>
+  );
+}
+
+export function VolumeOff(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      stroke="currentColor"
+      fill="currentColor"
+      strokeWidth="0"
+      viewBox="0 0 1024 1024"
+      height="200px"
+      width="200px"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path d="M575.536 65.904c-10.432-5.552-23.087-4.928-32.911 1.696L221.52 319.712l-106.624.08c-54.512 0-98.88 38.657-98.88 86.4l1.712 211.137c0 47.536 44.352 86.224 98.863 86.224l106.592.065L542.576 956.37a31.977 31.977 0 0 0 17.905 5.472c5.152 0 10.32-1.249 15.008-3.745a31.951 31.951 0 0 0 17.008-28.256V94.16a32.044 32.044 0 0 0-16.96-28.257zm-47.039 803.728l-277.6-224.526a31.97 31.97 0 0 0-17.889-5.473l-116.384-.064c-20.544 0-34.88-11.712-34.88-22.464l-1.727-211.152c0-10.48 14.336-22.16 34.895-22.16l116.4-.08a32.017 32.017 0 0 0 17.856-5.457l279.328-224v715.376zm365.505-357.118l104.593-105.84c12.496-12.496 12.496-32.752 0-45.248-12.464-12.496-32.752-12.496-45.248 0L849.011 466.994 744.675 361.426c-12.464-12.496-32.752-12.496-45.248 0s-12.496 32.752 0 45.248l104.592 105.84-103.6 104.816c-12.464 12.48-12.496 32.753 0 45.249s32.784 12.496 45.28 0l103.312-104.544 103.312 104.544c12.496 12.496 32.752 12.496 45.248 0s12.496-32.769 0-45.249z"></path>
+    </svg>
+  );
+}
+
+export function RotateRight(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      stroke="currentColor"
+      fill="currentColor"
+      strokeWidth="0.9"
+      viewBox="2.9 2 18 20"
+      height="100%"
+      width="100%"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path d="M12.48,3.43A9.09,9.09,0,0,1,18.3,5.55V2.35h1.64v6.5h-6.5V7.21H17.7a7.46,7.46,0,1,0,1.47,8.65l1.46.73A9.11,9.11,0,1,1,12.48,3.43Z"></path>
+    </svg>
+  );
+}
+
+export function RotateLeft(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      stroke="currentColor"
+      fill="currentColor"
+      strokeWidth="0.9"
+      viewBox="2.9 2 18.5 20"
+      height="100%"
+      width="100%"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path d="M11.52,3.43A9.09,9.09,0,0,0,5.7,5.55V2.35H4.07v6.5h6.5V7.21H6.3a7.46,7.46,0,1,1-1.47,8.65l-1.46.73A9.11,9.11,0,1,0,11.52,3.43Z"></path>
+    </svg>
+  );
+}
+
+export function PauseLight(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      stroke="currentColor"
+      fill="currentColor"
+      strokeWidth="0"
+      viewBox="0 0 24 24"
+      height="200px"
+      width="200px"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <g id="Pause_1">
+        <g>
+          <path d="M8.25,21.937H6.564a2.5,2.5,0,0,1-2.5-2.5V4.563a2.5,2.5,0,0,1,2.5-2.5H8.25a2.5,2.5,0,0,1,2.5,2.5V19.437A2.5,2.5,0,0,1,8.25,21.937ZM6.564,3.063a1.5,1.5,0,0,0-1.5,1.5V19.437a1.5,1.5,0,0,0,1.5,1.5H8.25a1.5,1.5,0,0,0,1.5-1.5V4.563a1.5,1.5,0,0,0-1.5-1.5Z"></path>
+          <path d="M17.436,21.937H15.75a2.5,2.5,0,0,1-2.5-2.5V4.563a2.5,2.5,0,0,1,2.5-2.5h1.686a2.5,2.5,0,0,1,2.5,2.5V19.437A2.5,2.5,0,0,1,17.436,21.937ZM15.75,3.063a1.5,1.5,0,0,0-1.5,1.5V19.437a1.5,1.5,0,0,0,1.5,1.5h1.686a1.5,1.5,0,0,0,1.5-1.5V4.563a1.5,1.5,0,0,0-1.5-1.5Z"></path>
+        </g>
+      </g>
+    </svg>
+  );
+}
+
+export function PlayBold(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      stroke="currentColor"
+      fill="none"
+      strokeWidth="1.5"
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+      height="200px"
+      width="200px"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z"
+      ></path>
+    </svg>
+  );
+}
+
 export function BellOn(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
@@ -198,14 +448,14 @@ export function ReloadCircleOutline(props: React.SVGProps<SVGSVGElement>) {
       <path
         fill="none"
         strokeMiterlimit="10"
-        strokeWidth="32"
+        strokeWidth="0"
         d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z"
       ></path>
       <path
         fill="none"
         strokeLinecap="round"
         strokeMiterlimit="10"
-        strokeWidth="32"
+        strokeWidth="20"
         d="m341.54 197.85-11.37-13.23a103.37 103.37 0 1 0 22.71 105.84"
       ></path>
       <path d="M367.32 162a8.44 8.44 0 0 0-6 2.54l-59.54 59.54a8.61 8.61 0 0 0 6.09 14.71h59.54a8.62 8.62 0 0 0 8.62-8.62v-59.56a8.61 8.61 0 0 0-8.68-8.63z"></path>

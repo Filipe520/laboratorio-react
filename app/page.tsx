@@ -8,6 +8,20 @@ import { useState } from "react";
 import * as VivaIcons from "./components/VivaIcons";
 
 const icones = [
+  "HeartBold",
+  "BiComment",
+  "ArrowLeftLi",
+  "ArrowRepeat",
+  "ArrowRightLi",
+  "PauseLight",
+  "PlayBold",
+  "RigidPlay",
+  "RotateLeft",
+  "RotateRight",
+  "ShareFill",
+  "Volume1",
+  "Volume2",
+  "VolumeOff",
   "Cam",
   "Fire",
   "Time",
@@ -80,6 +94,7 @@ const icones = [
   "VideoCamBold",
   "VolumeMute",
   "VolumeUp",
+  "",
 ];
 
 const videos = [
@@ -172,6 +187,10 @@ export default function Laboratorio() {
 
   const listaDeIcones = icones.map((icone) => {
     const IconeComp = (VivaIcons as Record<string, React.ElementType>)[icone];
+    if (!IconeComp) {
+      return { nameIcon: icone, icon: null };
+    }
+
     return { nameIcon: icone, icon: <IconeComp className={styleIcone} /> };
   });
   return (

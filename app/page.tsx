@@ -8,6 +8,12 @@ import { useState } from "react";
 import * as VivaIcons from "./components/VivaIcons";
 
 const icones = [
+  "Facebook",
+  "Gmail",
+  "Instagram",
+  "Phone",
+  "Twitter",
+  "Users",
   "HeartBold",
   "BiComment",
   "ArrowLeftLi",
